@@ -1,0 +1,157 @@
+body {
+  text-align: center;
+  background-color: #000000;
+
+}
+
+header h1{
+  visibility: hidden;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid rgb(253, 224, 0);
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+footer {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
+
+/* new */
+/* Button styles */
+#description-btn {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 20px 0;
+  color: #FEF2BF;
+  background-color: #333;
+  border: 2px solid #FEF2BF;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#description-btn:hover {
+  background-color: #FEF2BF;
+  color: #333;
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #333;
+  color: #FEF2BF;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 100px;
+  border: 2px solid #FEF2BF;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 600px;
+  font-family: 'Press Start 2P', cursive;
+  line-height: 2rem;
+}
+
+.close-btn {
+  color: #FEF2BF;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #FF6347; /* Tomato color for hover */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#start-button{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 20px 0;
+  color: #FEF2BF;
+  background-color: #333;
+  border: 2px solid #FEF2BF;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+
+  .btn {
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+  }
+
+  #level-title {
+    font-size: 2rem;
+  }
+}
